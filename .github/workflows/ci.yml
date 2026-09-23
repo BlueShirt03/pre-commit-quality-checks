@@ -30,7 +30,7 @@ jobs:
               run: flake8 src tests
 
             - name: Run automated tests
-              run: python3 -m pytest
+              run: pytest
 
             - name: Build application
               run: python3 -m compileall src
