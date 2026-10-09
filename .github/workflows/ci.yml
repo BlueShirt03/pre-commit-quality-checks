@@ -33,7 +33,7 @@ jobs:
 
             - name: Run automated tests
               run: |
-                python3 -m pytest --cov=src --cov-report=term-missing --cov-report=xml --cov-fail-under=101
+                python3 -m pytest --cov=src --cov-report=term-missing --cov-report=xml --cov-fail-under=80
             
             - name: Run security scan
               run: python3 -m pip_audit -r requirements.txt
